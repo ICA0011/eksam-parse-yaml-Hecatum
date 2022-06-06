@@ -1,9 +1,15 @@
 import yaml, requests
+import urllib
 
 url = 'http://upload.itcollege.ee/~aleksei/eksam.yaml'
 
 def parse_yaml(url):
     
-    # your code here
+    req = urllib.request.urlopen(url)
     
-    return name_of_the_user
+    return req
+
+
+
+x = urllib.request.urlopen(url)
+print(x)
