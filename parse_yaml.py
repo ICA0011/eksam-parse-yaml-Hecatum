@@ -12,7 +12,7 @@ def parse_yaml(url):
     for user in yaml_obj:
         for key, val in user.items():
             if val['permission'] == 'admin':
-                ad = val['permission']
+                ad = key
     
     return ad
 
